@@ -1,9 +1,6 @@
 pipeline {
   
-  agent {label 'dev'}
-  options {
-    buildDiscarder(logRotator(numToKeepStr: '5'))
-  }
+  agent { label "dev" };
   stages {
     stage('Hello') {
       steps {
